@@ -5,3 +5,10 @@
 3. Run the app while in the directory with 'flask run'.
 
 Note: do not run the dev server in production due to security reasons.
+
+### Model-Template-View
+Or MVC(Model-View-Controller) outside Python.
+
+Model (Data) - usually from a DB but I'm using a json file with data.
+Template (Presentation) - generates the html using Jinja2.
+Views (Behavior) - Python functions mapped to urls.
