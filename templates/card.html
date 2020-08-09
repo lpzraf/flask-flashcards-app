@@ -9,5 +9,19 @@
     <h1>Flash Crad</h1>
     <h2>Question: {{card.question}}</h2>
     <p>Answer: {{card.answer}}</p>
+    <p>
+        <button>
+            <a href="{{ url_for('welcome') }}">Home</a>
+        </button>
+        {% if index < max_index %}
+            <button>
+                <a href="{{ url_for('card_view', index=index + 1) }}">Next Card</a>
+            </button>
+        {% else %}
+            <button>
+                <a href="{{ url_for('card_view', index=0) }}">Start Over</a>
+            </button>
+        {% endif %}
+    </p>
 </body>
 </html>
